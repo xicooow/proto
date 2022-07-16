@@ -1,0 +1,13 @@
+node_modules
+
+# client
+client/.pnp
+client/.pnp.js
+client/coverage
+client/build
+
+# server
+server/build
+
+# logs
+*.log
