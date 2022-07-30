@@ -23,6 +23,6 @@ const App: FunctionComponent = () => {
       </main>
     </QueryClientProvider>
   );
-}
+};
 
 export default App;

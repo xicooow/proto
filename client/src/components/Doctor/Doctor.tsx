@@ -21,21 +21,21 @@ const Doctor: FunctionComponent = () => {
 
   const render = () => {
     switch (status) {
-      case "loading":
-        return <i>Loading...</i>;
-      case "error":
-        return <strong style={{ color: "red" }}>{error.message}</strong>;
-      case "success":
-        return (
-          <details open>
-            <summary>Server health</summary>
-            <code>
-              <pre>
-                {JSON.stringify(data, null, 2)}
-              </pre>
-            </code>
-          </details>
-        );
+    case "loading":
+      return <i>Loading...</i>;
+    case "error":
+      return <strong style={{ color: "red" }}>{error.message}</strong>;
+    case "success":
+      return (
+        <details open>
+          <summary>Server health</summary>
+          <code>
+            <pre>
+              {JSON.stringify(data, null, 2)}
+            </pre>
+          </code>
+        </details>
+      );
     }
   };
 
@@ -44,6 +44,6 @@ const Doctor: FunctionComponent = () => {
 
 export interface IStatus {
   diagnosis: "unknown" | "alive" | "dead"
-};
+}
 
 export default Doctor;
